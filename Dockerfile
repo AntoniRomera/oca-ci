@@ -14,7 +14,8 @@ RUN apt-get update -qq \
         gnupg \
         lsb-release \
         software-properties-common \
-        expect-dev
+        expect-dev \
+        openssh-client
 
 # Install wkhtml
 RUN case $(lsb_release -c -s) in \
